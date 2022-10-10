@@ -40,18 +40,17 @@ header {
   border: none;
   padding: 1rem 1.5rem;
   margin-block: 1rem;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  border-right: 1px solid gray;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  outline: none;
 }
 
-.nav button {
-  background-color: white;
-  border: none;
-  padding: 1rem 1.5rem;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  cursor: pointer;
+.nav input.warning {
+  outline: 2px solid red;
+}
+
+.nav input.success {
+  outline: 2px solid lightgreen;
 }
 
 /* main */
@@ -60,6 +59,10 @@ main {
   padding: 2em;
   margin-inline: auto;
   max-width: 1170px;
+}
+
+main h1 {
+  text-align: center;
 }
 
 /* book list */
@@ -76,7 +79,7 @@ main {
 .book__img-container img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .book__description {
@@ -102,6 +105,11 @@ main {
 
   .nav button {
     padding-block: 2rem;
+  }
+
+  .book__img-container {
+    min-width: 300px;
+    height: 500px;
   }
 
   .book-list {
