@@ -1,4 +1,5 @@
-import books from '../data.js';
+import data from '../data.js';
+import { addItemsToLocalStorage } from '../localStorage.js';
 
 // selectors
 const mainContainer = document.querySelector('main');
@@ -8,6 +9,11 @@ const searchInput = document.querySelector('nav > input');
 let isError = false;
 
 // supp functions
+const setupApp = () => {
+  addItemsToLocalStorage('books', data);
+  renderBooks(data);
+};
+
 const renderBooks = (booksList) => {
   if (isError) {
     mainContainer.innerHTML = `
@@ -82,4 +88,4 @@ searchInput.addEventListener('keyup', (e) => {
 });
 
 // initial render
-renderBooks(books);
+setupApp();
