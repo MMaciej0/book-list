@@ -66,7 +66,3 @@ addBtn.addEventListener('click', () => {
 
 // initial render
 setupApp();
-
-// TODO
-
-// fix error when no image

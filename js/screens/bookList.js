@@ -39,17 +39,18 @@ const renderBooks = (booksList) => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  const bookImg = document.querySelectorAll('.book__img-container > img');
-  bookImg.forEach((image) => {
-    // console.log(image.height);
-    const bookImgContainer = image.parentElement;
-    if (image.height === 0) {
-      console.log('0');
-      image.src = '../../images/default-image.jpg';
-      bookImgContainer.style.height = '500px';
-    }
-  });
-});
+// nie działa poprawnie, chciałem tego użyć aby sprawić czy image.src istnieje
+// document.addEventListener('DOMContentLoaded', () => {
+//   const bookImg = document.querySelectorAll('.book__img-container > img');
+//   bookImg.forEach((image) => {
+//     // console.log(image.height);
+//     const bookImgContainer = image.parentElement;
+//     if (image.height === 0) {
+//       console.log('0');
+//       image.src = '../../images/default-image.jpg';
+//       bookImgContainer.style.height = '500px';
+//     }
+//   });
+// });
 
 export default renderBooks;
