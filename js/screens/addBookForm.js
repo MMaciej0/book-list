@@ -12,7 +12,7 @@ export const renderAddingForm = () => {
         <button class="close-btn">
           <i class="fa-solid fa-square-xmark"></i>
         </button>
-        <h3 class="form-error"></h3>
+        <h3 class="form-error">error</h3>
         <form>
           <div class="input-box">
             <label for="title">Title:</label>

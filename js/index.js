@@ -69,4 +69,4 @@ setupApp();
 
 // TODO
 
-// fix form error (position on large screen, disapear effect)
+// fix error when no image
